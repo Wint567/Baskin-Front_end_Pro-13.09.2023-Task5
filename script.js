@@ -15,7 +15,6 @@ if (birthYear !== null && birthYear !== "") {
                 message += "Ти живеш у місті " + city + ".";
             }
 
-            // Частина №2 - Ваші види спорту та чемпіони
             var sportsChampions = {
                 "футбол": "Ліонель Мессі",
                 "баскетбол": "Леброн Джеймс",
@@ -24,6 +23,8 @@ if (birthYear !== null && birthYear !== "") {
 
             if (sportsChampions[sport.toLowerCase()]) {
                 message += "\nКруто! Хочеш стати " + sportsChampions[sport.toLowerCase()] + "?";
+            } else {
+                message += "\nМені теж подобається" + " " + sport;
             }
 
             alert(message);
@@ -49,4 +50,3 @@ function getCountry(capital) {
             return "цієї країни";
     }
 }
-
